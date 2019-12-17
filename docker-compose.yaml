@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+  geoserver:
+    container_name: geoserver
+    image: 'geoserver:latest'
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - c:/ProgramData/GeoServerData:/var/local/geoserver
